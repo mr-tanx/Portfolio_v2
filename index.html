@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanuj's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Orbitron (titles), Roboto (body), Share Tech Mono (code-like text) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">PTK</div>
+        <nav class="navbar">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#Certifications" class="nav-link">Certifications</a>
+            <a href="#social" class="nav-link">Social</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <a href="#resume" class="nav-link">Resume</a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+            <i class="fas fa-moon"></i> <!-- Icon will change based on theme -->
+        </button>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-main-section" data-aos="fade-up" data-aos-duration="1000">
+
+            <div class="hero-right-panel" data-aos="fade-right" data-aos-duration="1000">
+                <p class="greeting" data-aos="fade-up" data-aos-delay="100">Hi there,</p>
+                <img src="Documnents\profile.png" alt="Profile Photo" class="profile-photo" data-aos="zoom-in"
+                    data-aos-delay="200">
+                <h1 class="hero-title-right" data-aos="fade-up" data-aos-delay="300">PONDARA TANUJ KUMAR</h1>
+                <p class="hero-subtitle-right" data-aos="fade-up" data-aos-delay="400">COMPUTER SCIENCE ENGINEER</p>
+                <p class="C" data-aos="fade-up" data-aos-delay="400">[ Java Script, React, Html, SQL,
+                    MongoDB,Python, CSS ... ]</p>
+
+                <p class="hero-description-right" data-aos="fade-up" data-aos-delay="500">
+                    {Specializing in Generative AI, ML , Prompt Engineering ...}
+                </p>
+                <div class="hero-cta-buttons" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#projects" class="main-cta-btn">See my dev work</a>
+                    <a href="Documnents\Tanuj_resume.pdf" download="Tanuj_Kumar_Resume.pdf"
+                        class="secondary-cta-btn">Download CV</a>
+                </div>
+
+                <div class="bottom-section" data-aos="fade-up" data-aos-delay="700">
+                    <h2 class="problem-solver-title">Problem solver {'<'}code{'>'}</h2>
+                    <p class="problem-solver-subtitle">Always ready for process of learning</p>
+
+                    <div class="info-blocks">
+                        <div class="info-block" data-aos="zoom-in" data-aos-delay="800">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p>My academic journey has provided me with a strong foundation in computer science and
+                                related fields.</p>
+                        </div>
+                        <div class="info-block" data-aos="zoom-in" data-aos-delay="900">
+                            <i class="fas fa-code"></i>
+                            <p>Specializing Web x AI, I am constantly working on new technologies & following
+                                industry trends.</p>
+                        </div>
+                        <div class="info-block" data-aos="zoom-in" data-aos-delay="1000">
+                            <i class="fas fa-heart"></i>
+                            <p>Love working in team. Enjoy working in a team environment to solve issues & build
+                                impressive projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="tech-icons-grid">
+                        <div class="tech-icon-item" data-aos="fade-up" data-aos-delay="1100">
+                            <i class="fab fa-js"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tech-icon-item" data-aos="fade-up" data-aos-delay="1200">
+                            <i class="fab fa-react"></i>
+                            <p>React.js</p>
+                        </div>
+                        <div class="tech-icon-item" data-aos="fade-up" data-aos-delay="1300">
+                            <i class="fas fa-globe"></i>
+                            <p>Next.js</p>
+                        </div>
+                        <div class="tech-icon-item" data-aos="fade-up" data-aos-delay="1400">
+                            <i class="fab fa-python"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="tech-icon-item" data-aos="fade-up" data-aos-delay="1500">
+                            <i class="fas fa-database"></i>
+                            <p>MongoDB</p>
+                        </div>
+                        <div class="tech-icon-item" data-aos="fade-up" data-aos-delay="1600">
+                            <i class="fab fa-git-alt"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="tech-icon-item" data-aos="fade-up" data-aos-delay="1700">
+                            <i class="fas fa-bolt"></i>
+                            <p>Machine Learning</p>
+                        </div>
+                        <div class="tech-icon-item" data-aos="fade-up" data-aos-delay="1800">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS & SASS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- (My Dev Projects)  -->
+            <div class="hero-left-panel" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="section-title-left">My {'{'}dev{'}'} projects</h2>
+                <!-- <p class="section-subtitle-left">From Web Apps to Websites & Games</p>
+
+                <div class="project-filters">
+                    <button class="filter-btn active">Apps</button>
+                    <button class="filter-btn">Websites</button>
+                    <button class="filter-btn">Games</button>
+                </div> -->
+
+                <div class="featured-project-cards">
+                    <div class="project-card-hero">
+                        <img src="https://placehold.co/300x200/2c2c2c/FF8C00?text=Project+1" alt="Project Image 1">
+                        <div class="project-info">
+                            <span class="tech-stack"> Django,HTML, CSS, SQL</span>
+                            <h3>BloodLine</h3>
+                            <p> Developed a responsive
+                                webplatform using Django and SQL to connect donors, recipients, and blood
+                                banks. Designed an intuitive Ul for seamless registration, blood requests, and real-time
+                                blood bank updates. integrated secure authentication and a dedicated blood bank portal
+                                for tracking available blood units.</p>
+                            <a href="#" class="project-link">See in github</a>
+                        </div>
+                    </div>
+                    <div class="project-card-hero">
+                        <img src="https://placehold.co/300x200/2c2c2c/FF4500?text=Project+2" alt="Project Image 2">
+                        <div class="project-info">
+                            <span class="tech-stack">Google Collab, pandas, MNIST, CNN</span>
+                            <h3>ML Project</h3>
+                            <p>A model
+                                to recognize handwritten numbers using the MNIST dataset and neural networks.
+                                Preprocessed data and utilized TensorFlow/Keras for training and evaluation. Built a
+                                user interface for real-time number recognition</p>
+                            <a href="#" class="project-link">See in github</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button class="see-all-btn">See all apps</button> -->
+            </div>
+        </section>
+
+        <!-- Education Section as Info Blocks -->
+        <section class="education-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Education</h2>
+            <p>My academic journey has provided me with a strong foundation in computer science and related fields.</p>
+            <div class="education-info-grid info-blocks">
+                <div class="info-block" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-graduation-cap"></i> <!-- Graduation Cap Icon -->
+                    <h3>B.Tech (Computer Science)</h3>
+                    <p>NIST University, 2022 - 2026</p>
+                </div>
+                <div class="info-block" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-school"></i> <!-- School Icon -->
+                    <h3>Intermediate, MPC</h3>
+                    <p>Sri Chaitanya College, 2020 - 2022 - 93.3%</p>
+                </div>
+                <div class="info-block" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-book"></i> <!-- Book Icon -->
+                    <h3>Matriculation</h3>
+                    <p>Sri Chaitanya School- 2020 - 96%</p>
+                </div>
+            </div>
+        </section>
+        <!-- skills section -->
+        <section id="skills" class="skills-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Technical Skills</h2>
+            <p>My expertise covers a range of programming languages, web technologies, and development tools.</p>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-right" data-aos-delay="100">
+                    <h3>Programming Languages</h3>
+                    <p>Python, JavaScript</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, React, Node.js, Django</p>
+                </div>
+                <div class="skill-card" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Tools & Platforms</h3>
+                    <p>Git, Canva</p>
+                </div>
+                <div class="skill-card" data-aos="fade-right" data-aos-delay="400">
+                    <h3>Databases</h3>
+                    <p>MongoDB, MySQL</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <h3>AI/ML Frameworks</h3>
+                    <p>TensorFlow, Keras, Scikit-learn</p>
+                </div>
+                <!-- <div class="skill-card" data-aos="fade-left" data-aos-delay="600">
+                    <h3>Cloud Technologies</h3>
+                    <p>AWS EC2, S3, Lambda, GCP</p>
+                </div> -->
+            </div>
+        </section>
+        <section id="projects" class="projects-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>My Projects</h2>
+            <p>Here are some of the key projects I've worked on, showcasing my development skills.</p>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-right" data-aos-delay="100">
+                    <h3> ONLINE BLOOD DONATION MANAGEMENT SYSTEM</h3>
+                    <p>Build a Full stack project on blood donation management system using Django,html, css</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern and responsive portfolio website with smooth animations and dynamic sections.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Machine learning Project</h3>
+                    <p>Developed a model
+                        to recognize handwritten numbers using the MNIST dataset and neural networks.
+                        Preprocessed data and utilized TensorFlow/Keras for training and evaluation. Built a
+                        user interface for real-time number recognition</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- Certifications -->
+        <section id="Certifications" class="certifications-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Certifications</h2>
+            <p>My continuous learning journey is supported by these certifications from leading platforms.</p>
+            <div class="cert-grid">
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="100">
+                    <h3>Privacy And Security In Online Social Media - NPTEL</h3>
+                    <p>Completed a course in NPTEL where Privacyand security in social media platforms which include
+                        cyber security</p>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="200">
+                    <h3>Computer Vision Using Machine Learning - NIST University</h3>
+                    <p>Learned the fundamental of ML and Computer vision , got enough knowledge and enthusiasm to dive
+                        into the field </p>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="300">
+                    <h3>Web Development Bootcamp</h3>
+                    <p>Hands-on experience in building full-stack applications using modern technologies.</p>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="400">
+                    <h3>Cyeber Security & ML Bootcamp</h3>
+                    <p>Gained fundamental IT skills, including troubleshooting, networking, operating systems, and
+                        security.</p>
+                </div>
+                <div class="cert-card" data-aos="flip-up" data-aos-delay="500">
+                    <h3>Oracle Cloud Infrastructure Data Science Professional </h3>
+                    <p>Determine the appropriate OCI services to implement Machine Learning solutions for business use
+                        cases.Implement end-to-end machine learning lifecycle, including data preparation, model
+                        training, evaluation, and deployment.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Social -->
+        <section id="social" class="-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Social Life & Activities</h2>
+            <p>I actively engage in co-curricular activities, contributing to my holistic growth as a valued software
+                engineer.
+            </p>
+            <div class="social-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <h3>NCC Cadet</h3>
+                    <p>Developed leadership, patriotism, teamwork, and discipline through active participation in NCC
+                        activities. Passed C certificate exam securing 'A'grade.
+                    </p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <h3>Student counsellor</h3>
+                    <p>Active leading member in Team NCS(NIST counselling service), a student counselling service in the
+                        University</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <h3>Kabaddi & Sports</h3>
+                    <p>Represented my institution in various sports events, showcasing team spirit and dedication.</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                    <h3>Volunteer Work</h3>
+                    <p>Contributed to local community initiatives, focusing on education, environmental awarenessand
+                        blood donation camps.
+                    </p>
+                </div>
+
+            </div>
+            <!-- contact -->
+            <section id="contact" class="contact-section" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Contact Me</h2>
+                <p>If you would like to get in touch, please fill out the form below or connect with me on my
+                    professional networks.</p>
+
+                <!-- Formspree -->
+                <form id="contactForm" class="contact-form-hero" action="https://formspree.io/f/xblkvqrl" method="POST">
+
+                    <input type="text" name="fullName" placeholder="Your Name" data-aos="fade-up" data-aos-delay="100">
+
+                    <input type="email" name="email" placeholder="Your Email" required data-aos="fade-up"
+                        data-aos-delay="200">
+                    <textarea name="message" placeholder="Your Message" rows="5" required data-aos="fade-up"
+                        data-aos-delay="300"></textarea>
+
+                    <button type="submit" class="send-message-btn" data-aos="fade-up" data-aos-delay="400">
+                        Send Message
+                    </button>
+
+                    <!-- Inline status message -->
+                    <p id="formStatus" style="margin-top: 10px; font-weight: 500;"></p>
+                </form>
+
+                </form>
+
+                <div class="contact-info-links" data-aos="fade-up" data-aos-delay="500">
+                    <p>Email: <a href="mailto:mrtanuj9@gmail.com">mrtanuj9@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/tanuj-kumar-pondara-ptk09"
+                            target="_blank">tanuj-kumar-pondara-ptk09</a></p>
+                    <p>GitHub: <a href="https://github.com/mr-tanx" target="_blank">mr-tanx</a></p>
+                </div>
+            </section>
+        </section>
+        <!-- Resume -->
+        <section id="resume" class="resume-section" data-aos="fade-up" data-aos-duration="1000">
+            <h2>My Resume</h2>
+            <p>You can view my full resume below or download it directly.</p>
+
+            <div class="resume-buttons">
+                <!-- Download button -->
+                <a href="Documnents\Tanuj's Resume.pdf" download="Tanuj_Kumar_Resume.pdf" class="resume-btn"
+                    id="resume-download-link" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+
+                <!-- View button -->
+                <a href="Documnents\Tanuj's Resume.pdf" target="_blank" class="resume-btn" id="resume-view-link"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-eye"></i> View Resume
+                </a>
+            </div>
+        </section>
+        </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>&copy; Pondara Tanuj Kumar ✌🏻</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Your custom JavaScript -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
